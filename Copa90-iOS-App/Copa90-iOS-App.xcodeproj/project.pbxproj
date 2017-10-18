@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7EEF1081F963B7C002D6D4D /* CopaAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1071F963B7C002D6D4D /* CopaAPIManager.m */; };
+		A7EEF10C1F963D8E002D6D4D /* RestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF10B1F963D8E002D6D4D /* RestAPI.m */; };
+		A7EEF1111F963FB2002D6D4D /* LogCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1101F963FB2002D6D4D /* LogCenter.m */; };
+		A7EEF1141F963FB9002D6D4D /* LogService.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1121F963FB9002D6D4D /* LogService.m */; };
+		A7EEF1171F963FC1002D6D4D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1151F963FC1002D6D4D /* Reachability.m */; };
+		A7EEF11B1F964006002D6D4D /* NSQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1191F964006002D6D4D /* NSQueue.m */; };
+		A7EEF11E1F964583002D6D4D /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF11D1F964583002D6D4D /* APIManager.m */; };
+		A7EEF1221F972523002D6D4D /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1211F972523002D6D4D /* Team.m */; };
+		A7EEF1251F97273F002D6D4D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1241F97273F002D6D4D /* Player.m */; };
+		A7EEF1281F9727B6002D6D4D /* Coach.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1271F9727B6002D6D4D /* Coach.m */; };
+		A7EEF12B1F9727F1002D6D4D /* League.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF12A1F9727F1002D6D4D /* League.m */; };
+		A7EEF12E1F972882002D6D4D /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF12D1F972882002D6D4D /* Notification.m */; };
+		A7EEF1311F972935002D6D4D /* Package.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1301F972935002D6D4D /* Package.m */; };
+		A7EEF1341F972AB3002D6D4D /* Predict.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1331F972AB3002D6D4D /* Predict.m */; };
+		A7EEF1371F972C37002D6D4D /* Exact.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1361F972C37002D6D4D /* Exact.m */; };
+		A7EEF13A1F972C46002D6D4D /* ExactSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1391F972C46002D6D4D /* ExactSelector.m */; };
+		A7EEF13D1F973074002D6D4D /* Estimate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF13C1F973074002D6D4D /* Estimate.m */; };
+		A7EEF1401F97311A002D6D4D /* Choice.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF13F1F97311A002D6D4D /* Choice.m */; };
+		A7EEF1431F973200002D6D4D /* ChoiceOption.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1421F973200002D6D4D /* ChoiceOption.m */; };
+		A7EEF1461F973D7F002D6D4D /* Verification.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1451F973D7F002D6D4D /* Verification.m */; };
+		A7EEF1491F973E12002D6D4D /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1481F973E12002D6D4D /* Transaction.m */; };
+		A7EEF14C1F973F4A002D6D4D /* Ranking.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF14B1F973F4A002D6D4D /* Ranking.m */; };
+		A7EEF14F1F973FE6002D6D4D /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF14E1F973FE6002D6D4D /* Client.m */; };
+		A7EEF1521F974055002D6D4D /* AccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1511F974055002D6D4D /* AccountInfo.m */; };
+		A7EEF1551F97414A002D6D4D /* Trophy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1541F97414A002D6D4D /* Trophy.m */; };
+		A7EEF1581F974299002D6D4D /* Referral.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF1571F974299002D6D4D /* Referral.m */; };
+		A7EEF15B1F974345002D6D4D /* Checkpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF15A1F974345002D6D4D /* Checkpoint.m */; };
+		A7EEF15E1F97461C002D6D4D /* Champion.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF15D1F97461C002D6D4D /* Champion.m */; };
+		A7F69C1E1F960ACB003CAF0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F69C1A1F960ACA003CAF0D /* main.m */; };
+		A7F69C1F1F960ACB003CAF0D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7F69C1B1F960ACB003CAF0D /* Info.plist */; };
+		A7F69C201F960ACB003CAF0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F69C1D1F960ACB003CAF0D /* AppDelegate.m */; };
+		A7F69C251F962D62003CAF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F69C211F962D62003CAF0D /* LaunchScreen.storyboard */; };
+		A7F69C261F962D62003CAF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F69C231F962D62003CAF0D /* Main.storyboard */; };
+		A7F69C291F962D80003CAF0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F69C281F962D80003CAF0D /* ViewController.m */; };
+		A7F69C2B1F962DA8003CAF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F69C2A1F962DA8003CAF0D /* Assets.xcassets */; };
+		D93925A68A922176975C3DAD /* libPods-Copa90-iOS-App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E76EE44E5B60ABF7A026EE51 /* libPods-Copa90-iOS-App.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		915A163FDB1D96245B67FE25 /* Pods-Copa90-iOS-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copa90-iOS-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Copa90-iOS-App/Pods-Copa90-iOS-App.release.xcconfig"; sourceTree = "<group>"; };
+		A73074A11F9605B500AD1134 /* Copa90-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Copa90-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7EEF1061F963B7C002D6D4D /* CopaAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopaAPIManager.h; sourceTree = "<group>"; };
+		A7EEF1071F963B7C002D6D4D /* CopaAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopaAPIManager.m; sourceTree = "<group>"; };
+		A7EEF1091F963C98002D6D4D /* PublicHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicHeaders.h; sourceTree = "<group>"; };
+		A7EEF10A1F963D8E002D6D4D /* RestAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestAPI.h; sourceTree = "<group>"; };
+		A7EEF10B1F963D8E002D6D4D /* RestAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestAPI.m; sourceTree = "<group>"; };
+		A7EEF10F1F963FB2002D6D4D /* LogCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogCenter.h; sourceTree = "<group>"; };
+		A7EEF1101F963FB2002D6D4D /* LogCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogCenter.m; sourceTree = "<group>"; };
+		A7EEF1121F963FB9002D6D4D /* LogService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogService.m; sourceTree = "<group>"; };
+		A7EEF1131F963FB9002D6D4D /* LogService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogService.h; sourceTree = "<group>"; };
+		A7EEF1151F963FC1002D6D4D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A7EEF1161F963FC1002D6D4D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A7EEF1191F964006002D6D4D /* NSQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSQueue.m; sourceTree = "<group>"; };
+		A7EEF11A1F964006002D6D4D /* NSQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSQueue.h; sourceTree = "<group>"; };
+		A7EEF11C1F964583002D6D4D /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		A7EEF11D1F964583002D6D4D /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		A7EEF1201F972523002D6D4D /* Team.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		A7EEF1211F972523002D6D4D /* Team.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
+		A7EEF1231F97273F002D6D4D /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		A7EEF1241F97273F002D6D4D /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		A7EEF1261F9727B6002D6D4D /* Coach.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coach.h; sourceTree = "<group>"; };
+		A7EEF1271F9727B6002D6D4D /* Coach.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coach.m; sourceTree = "<group>"; };
+		A7EEF1291F9727F1002D6D4D /* League.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = League.h; sourceTree = "<group>"; };
+		A7EEF12A1F9727F1002D6D4D /* League.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = League.m; sourceTree = "<group>"; };
+		A7EEF12C1F972882002D6D4D /* Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		A7EEF12D1F972882002D6D4D /* Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
+		A7EEF12F1F972935002D6D4D /* Package.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Package.h; sourceTree = "<group>"; };
+		A7EEF1301F972935002D6D4D /* Package.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Package.m; sourceTree = "<group>"; };
+		A7EEF1321F972AB3002D6D4D /* Predict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Predict.h; sourceTree = "<group>"; };
+		A7EEF1331F972AB3002D6D4D /* Predict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Predict.m; sourceTree = "<group>"; };
+		A7EEF1351F972C37002D6D4D /* Exact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exact.h; sourceTree = "<group>"; };
+		A7EEF1361F972C37002D6D4D /* Exact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exact.m; sourceTree = "<group>"; };
+		A7EEF1381F972C46002D6D4D /* ExactSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExactSelector.h; sourceTree = "<group>"; };
+		A7EEF1391F972C46002D6D4D /* ExactSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExactSelector.m; sourceTree = "<group>"; };
+		A7EEF13B1F973074002D6D4D /* Estimate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Estimate.h; sourceTree = "<group>"; };
+		A7EEF13C1F973074002D6D4D /* Estimate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Estimate.m; sourceTree = "<group>"; };
+		A7EEF13E1F97311A002D6D4D /* Choice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Choice.h; sourceTree = "<group>"; };
+		A7EEF13F1F97311A002D6D4D /* Choice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Choice.m; sourceTree = "<group>"; };
+		A7EEF1411F973200002D6D4D /* ChoiceOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChoiceOption.h; sourceTree = "<group>"; };
+		A7EEF1421F973200002D6D4D /* ChoiceOption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChoiceOption.m; sourceTree = "<group>"; };
+		A7EEF1441F973D7F002D6D4D /* Verification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Verification.h; sourceTree = "<group>"; };
+		A7EEF1451F973D7F002D6D4D /* Verification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Verification.m; sourceTree = "<group>"; };
+		A7EEF1471F973E12002D6D4D /* Transaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		A7EEF1481F973E12002D6D4D /* Transaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		A7EEF14A1F973F4A002D6D4D /* Ranking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ranking.h; sourceTree = "<group>"; };
+		A7EEF14B1F973F4A002D6D4D /* Ranking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ranking.m; sourceTree = "<group>"; };
+		A7EEF14D1F973FE6002D6D4D /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		A7EEF14E1F973FE6002D6D4D /* Client.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		A7EEF1501F974055002D6D4D /* AccountInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountInfo.h; sourceTree = "<group>"; };
+		A7EEF1511F974055002D6D4D /* AccountInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountInfo.m; sourceTree = "<group>"; };
+		A7EEF1531F97414A002D6D4D /* Trophy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trophy.h; sourceTree = "<group>"; };
+		A7EEF1541F97414A002D6D4D /* Trophy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Trophy.m; sourceTree = "<group>"; };
+		A7EEF1561F974299002D6D4D /* Referral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Referral.h; sourceTree = "<group>"; };
+		A7EEF1571F974299002D6D4D /* Referral.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Referral.m; sourceTree = "<group>"; };
+		A7EEF1591F974345002D6D4D /* Checkpoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Checkpoint.h; sourceTree = "<group>"; };
+		A7EEF15A1F974345002D6D4D /* Checkpoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Checkpoint.m; sourceTree = "<group>"; };
+		A7EEF15C1F97461C002D6D4D /* Champion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Champion.h; sourceTree = "<group>"; };
+		A7EEF15D1F97461C002D6D4D /* Champion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Champion.m; sourceTree = "<group>"; };
+		A7F69C1A1F960ACA003CAF0D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Copa90-iOS-App/Application/Main/main.m"; sourceTree = SOURCE_ROOT; };
+		A7F69C1B1F960ACB003CAF0D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Copa90-iOS-App/Application/Main/Info.plist"; sourceTree = SOURCE_ROOT; };
+		A7F69C1C1F960ACB003CAF0D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Copa90-iOS-App/Application/Main/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		A7F69C1D1F960ACB003CAF0D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Copa90-iOS-App/Application/Main/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		A7F69C221F962D62003CAF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Copa90-iOS-App/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		A7F69C241F962D62003CAF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Copa90-iOS-App/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		A7F69C271F962D80003CAF0D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Copa90-iOS-App/Application/ViewController/ViewController.h"; sourceTree = SOURCE_ROOT; };
+		A7F69C281F962D80003CAF0D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Copa90-iOS-App/Application/ViewController/ViewController.m"; sourceTree = SOURCE_ROOT; };
+		A7F69C2A1F962DA8003CAF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Copa90-iOS-App/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		BEC95B22F860A71EAEBD54CE /* Pods-Copa90-iOS-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copa90-iOS-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Copa90-iOS-App/Pods-Copa90-iOS-App.debug.xcconfig"; sourceTree = "<group>"; };
+		E76EE44E5B60ABF7A026EE51 /* libPods-Copa90-iOS-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Copa90-iOS-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A730749E1F9605B500AD1134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93925A68A922176975C3DAD /* libPods-Copa90-iOS-App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1712CCC22FD7FD4B889E3170 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E76EE44E5B60ABF7A026EE51 /* libPods-Copa90-iOS-App.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A73074981F9605B500AD1134 = {
+			isa = PBXGroup;
+			children = (
+				A73074A31F9605B500AD1134 /* Copa90-iOS-App */,
+				A73074A21F9605B500AD1134 /* Products */,
+				F25250CCD43B03F11C0974BC /* Pods */,
+				1712CCC22FD7FD4B889E3170 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A73074A21F9605B500AD1134 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A73074A11F9605B500AD1134 /* Copa90-iOS-App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A73074A31F9605B500AD1134 /* Copa90-iOS-App */ = {
+			isa = PBXGroup;
+			children = (
+				A7E56AD11F9632A300F17A8D /* SDK */,
+				A7F69C151F960A66003CAF0D /* Application */,
+			);
+			path = "Copa90-iOS-App";
+			sourceTree = "<group>";
+		};
+		A7E56AD11F9632A300F17A8D /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				A7E56AD41F96334800F17A8D /* Engine */,
+				A7E56AD31F96331200F17A8D /* RestAPI */,
+				A7E56AD21F9632DC00F17A8D /* Extension */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		A7E56AD21F9632DC00F17A8D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF1181F963FEF002D6D4D /* Queue */,
+				A7E56AD61F96338F00F17A8D /* Logger */,
+				A7E56AD51F96338B00F17A8D /* Reachability */,
+				A7EEF1091F963C98002D6D4D /* PublicHeaders.h */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A7E56AD31F96331200F17A8D /* RestAPI */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF1061F963B7C002D6D4D /* CopaAPIManager.h */,
+				A7EEF1071F963B7C002D6D4D /* CopaAPIManager.m */,
+				A7EEF10A1F963D8E002D6D4D /* RestAPI.h */,
+				A7EEF10B1F963D8E002D6D4D /* RestAPI.m */,
+				A7EEF11C1F964583002D6D4D /* APIManager.h */,
+				A7EEF11D1F964583002D6D4D /* APIManager.m */,
+			);
+			path = RestAPI;
+			sourceTree = "<group>";
+		};
+		A7E56AD41F96334800F17A8D /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF11F1F9724F4002D6D4D /* Model */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		A7E56AD51F96338B00F17A8D /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF1161F963FC1002D6D4D /* Reachability.h */,
+				A7EEF1151F963FC1002D6D4D /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		A7E56AD61F96338F00F17A8D /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF10E1F963F7C002D6D4D /* Controller */,
+				A7EEF10D1F963F74002D6D4D /* Model */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		A7EEF10D1F963F74002D6D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF1131F963FB9002D6D4D /* LogService.h */,
+				A7EEF1121F963FB9002D6D4D /* LogService.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7EEF10E1F963F7C002D6D4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF10F1F963FB2002D6D4D /* LogCenter.h */,
+				A7EEF1101F963FB2002D6D4D /* LogCenter.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A7EEF1181F963FEF002D6D4D /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF11A1F964006002D6D4D /* NSQueue.h */,
+				A7EEF1191F964006002D6D4D /* NSQueue.m */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		A7EEF11F1F9724F4002D6D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF1201F972523002D6D4D /* Team.h */,
+				A7EEF1211F972523002D6D4D /* Team.m */,
+				A7EEF1231F97273F002D6D4D /* Player.h */,
+				A7EEF1241F97273F002D6D4D /* Player.m */,
+				A7EEF1261F9727B6002D6D4D /* Coach.h */,
+				A7EEF1271F9727B6002D6D4D /* Coach.m */,
+				A7EEF1291F9727F1002D6D4D /* League.h */,
+				A7EEF12A1F9727F1002D6D4D /* League.m */,
+				A7EEF12C1F972882002D6D4D /* Notification.h */,
+				A7EEF12D1F972882002D6D4D /* Notification.m */,
+				A7EEF12F1F972935002D6D4D /* Package.h */,
+				A7EEF1301F972935002D6D4D /* Package.m */,
+				A7EEF1321F972AB3002D6D4D /* Predict.h */,
+				A7EEF1331F972AB3002D6D4D /* Predict.m */,
+				A7EEF13B1F973074002D6D4D /* Estimate.h */,
+				A7EEF13C1F973074002D6D4D /* Estimate.m */,
+				A7EEF1351F972C37002D6D4D /* Exact.h */,
+				A7EEF1361F972C37002D6D4D /* Exact.m */,
+				A7EEF1381F972C46002D6D4D /* ExactSelector.h */,
+				A7EEF1391F972C46002D6D4D /* ExactSelector.m */,
+				A7EEF13E1F97311A002D6D4D /* Choice.h */,
+				A7EEF13F1F97311A002D6D4D /* Choice.m */,
+				A7EEF1411F973200002D6D4D /* ChoiceOption.h */,
+				A7EEF1421F973200002D6D4D /* ChoiceOption.m */,
+				A7EEF1441F973D7F002D6D4D /* Verification.h */,
+				A7EEF1451F973D7F002D6D4D /* Verification.m */,
+				A7EEF1471F973E12002D6D4D /* Transaction.h */,
+				A7EEF1481F973E12002D6D4D /* Transaction.m */,
+				A7EEF14A1F973F4A002D6D4D /* Ranking.h */,
+				A7EEF14B1F973F4A002D6D4D /* Ranking.m */,
+				A7EEF14D1F973FE6002D6D4D /* Client.h */,
+				A7EEF14E1F973FE6002D6D4D /* Client.m */,
+				A7EEF1501F974055002D6D4D /* AccountInfo.h */,
+				A7EEF1511F974055002D6D4D /* AccountInfo.m */,
+				A7EEF1531F97414A002D6D4D /* Trophy.h */,
+				A7EEF1541F97414A002D6D4D /* Trophy.m */,
+				A7EEF1561F974299002D6D4D /* Referral.h */,
+				A7EEF1571F974299002D6D4D /* Referral.m */,
+				A7EEF1591F974345002D6D4D /* Checkpoint.h */,
+				A7EEF15A1F974345002D6D4D /* Checkpoint.m */,
+				A7EEF15C1F97461C002D6D4D /* Champion.h */,
+				A7EEF15D1F97461C002D6D4D /* Champion.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7F69C151F960A66003CAF0D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A7F69C191F960A9F003CAF0D /* Main */,
+				A7F69C181F960A92003CAF0D /* Model */,
+				A7F69C171F960A8D003CAF0D /* View */,
+				A7F69C161F960A85003CAF0D /* ViewController */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A7F69C161F960A85003CAF0D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7F69C271F962D80003CAF0D /* ViewController.h */,
+				A7F69C281F962D80003CAF0D /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A7F69C171F960A8D003CAF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7F69C211F962D62003CAF0D /* LaunchScreen.storyboard */,
+				A7F69C231F962D62003CAF0D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7F69C181F960A92003CAF0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7F69C191F960A9F003CAF0D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A7F69C2A1F962DA8003CAF0D /* Assets.xcassets */,
+				A7F69C1C1F960ACB003CAF0D /* AppDelegate.h */,
+				A7F69C1D1F960ACB003CAF0D /* AppDelegate.m */,
+				A7F69C1B1F960ACB003CAF0D /* Info.plist */,
+				A7F69C1A1F960ACA003CAF0D /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F25250CCD43B03F11C0974BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEC95B22F860A71EAEBD54CE /* Pods-Copa90-iOS-App.debug.xcconfig */,
+				915A163FDB1D96245B67FE25 /* Pods-Copa90-iOS-App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A73074A01F9605B500AD1134 /* Copa90-iOS-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A73074B71F9605B500AD1134 /* Build configuration list for PBXNativeTarget "Copa90-iOS-App" */;
+			buildPhases = (
+				A33393613CD27646B0141E51 /* [CP] Check Pods Manifest.lock */,
+				A730749D1F9605B500AD1134 /* Sources */,
+				A730749E1F9605B500AD1134 /* Frameworks */,
+				A730749F1F9605B500AD1134 /* Resources */,
+				7131172AD121A9FB1CEEF2F2 /* [CP] Embed Pods Frameworks */,
+				6E7FD8CB9B8F5CD7E5989478 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Copa90-iOS-App";
+			productName = "Copa90-iOS-App";
+			productReference = A73074A11F9605B500AD1134 /* Copa90-iOS-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A73074991F9605B500AD1134 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Alirëza WJ Arabi";
+				TargetAttributes = {
+					A73074A01F9605B500AD1134 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A730749C1F9605B500AD1134 /* Build configuration list for PBXProject "Copa90-iOS-App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A73074981F9605B500AD1134;
+			productRefGroup = A73074A21F9605B500AD1134 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A73074A01F9605B500AD1134 /* Copa90-iOS-App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A730749F1F9605B500AD1134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F69C261F962D62003CAF0D /* Main.storyboard in Resources */,
+				A7F69C1F1F960ACB003CAF0D /* Info.plist in Resources */,
+				A7F69C2B1F962DA8003CAF0D /* Assets.xcassets in Resources */,
+				A7F69C251F962D62003CAF0D /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E7FD8CB9B8F5CD7E5989478 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copa90-iOS-App/Pods-Copa90-iOS-App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7131172AD121A9FB1CEEF2F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copa90-iOS-App/Pods-Copa90-iOS-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A33393613CD27646B0141E51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A730749D1F9605B500AD1134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7EEF1311F972935002D6D4D /* Package.m in Sources */,
+				A7EEF1221F972523002D6D4D /* Team.m in Sources */,
+				A7EEF14C1F973F4A002D6D4D /* Ranking.m in Sources */,
+				A7F69C291F962D80003CAF0D /* ViewController.m in Sources */,
+				A7EEF15E1F97461C002D6D4D /* Champion.m in Sources */,
+				A7F69C1E1F960ACB003CAF0D /* main.m in Sources */,
+				A7EEF1171F963FC1002D6D4D /* Reachability.m in Sources */,
+				A7EEF1251F97273F002D6D4D /* Player.m in Sources */,
+				A7EEF15B1F974345002D6D4D /* Checkpoint.m in Sources */,
+				A7EEF1491F973E12002D6D4D /* Transaction.m in Sources */,
+				A7EEF10C1F963D8E002D6D4D /* RestAPI.m in Sources */,
+				A7EEF1431F973200002D6D4D /* ChoiceOption.m in Sources */,
+				A7EEF11E1F964583002D6D4D /* APIManager.m in Sources */,
+				A7F69C201F960ACB003CAF0D /* AppDelegate.m in Sources */,
+				A7EEF1371F972C37002D6D4D /* Exact.m in Sources */,
+				A7EEF1581F974299002D6D4D /* Referral.m in Sources */,
+				A7EEF1551F97414A002D6D4D /* Trophy.m in Sources */,
+				A7EEF1341F972AB3002D6D4D /* Predict.m in Sources */,
+				A7EEF12B1F9727F1002D6D4D /* League.m in Sources */,
+				A7EEF11B1F964006002D6D4D /* NSQueue.m in Sources */,
+				A7EEF14F1F973FE6002D6D4D /* Client.m in Sources */,
+				A7EEF1521F974055002D6D4D /* AccountInfo.m in Sources */,
+				A7EEF13A1F972C46002D6D4D /* ExactSelector.m in Sources */,
+				A7EEF1141F963FB9002D6D4D /* LogService.m in Sources */,
+				A7EEF1401F97311A002D6D4D /* Choice.m in Sources */,
+				A7EEF1081F963B7C002D6D4D /* CopaAPIManager.m in Sources */,
+				A7EEF1461F973D7F002D6D4D /* Verification.m in Sources */,
+				A7EEF12E1F972882002D6D4D /* Notification.m in Sources */,
+				A7EEF13D1F973074002D6D4D /* Estimate.m in Sources */,
+				A7EEF1111F963FB2002D6D4D /* LogCenter.m in Sources */,
+				A7EEF1281F9727B6002D6D4D /* Coach.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7F69C211F962D62003CAF0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7F69C221F962D62003CAF0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A7F69C231F962D62003CAF0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7F69C241F962D62003CAF0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A73074B51F9605B500AD1134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A73074B61F9605B500AD1134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A73074B81F9605B500AD1134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC95B22F860A71EAEBD54CE /* Pods-Copa90-iOS-App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KJFB7R3TBL;
+				INFOPLIST_FILE = "$(SRCROOT)/Copa90-iOS-App/Application/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hurricanc.Copa90-iOS-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A73074B91F9605B500AD1134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915A163FDB1D96245B67FE25 /* Pods-Copa90-iOS-App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KJFB7R3TBL;
+				INFOPLIST_FILE = "$(SRCROOT)/Copa90-iOS-App/Application/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hurricanc.Copa90-iOS-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A730749C1F9605B500AD1134 /* Build configuration list for PBXProject "Copa90-iOS-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73074B51F9605B500AD1134 /* Debug */,
+				A73074B61F9605B500AD1134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A73074B71F9605B500AD1134 /* Build configuration list for PBXNativeTarget "Copa90-iOS-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73074B81F9605B500AD1134 /* Debug */,
+				A73074B91F9605B500AD1134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A73074991F9605B500AD1134 /* Project object */;
+}
