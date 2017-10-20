@@ -40,7 +40,26 @@
 #endif
     });
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkRequestDidFinish:) name:AFNetworkingTaskDidCompleteNotification object:nil];
+    
     return _sharedManager;
+}
+
+- (void)networkRequestDidFinish:(NSNotification *)notification
+{
+    NSError *error = [notification.userInfo objectForKey:AFNetworkingTaskDidCompleteErrorKey];
+    NSDictionary *responseObject = [notification.userInfo objectForKey:AFNetworkingTaskDidCompleteSerializedResponseKey];
+    long statusCode = [[responseObject valueForKey:@"statusCode"] longValue];
+    
+    if (error)
+    {
+        
+    }
+    
+    if (statusCode == 401 || statusCode == 403 || statusCode == 0)
+    {
+        
+    }
 }
 
 @end
