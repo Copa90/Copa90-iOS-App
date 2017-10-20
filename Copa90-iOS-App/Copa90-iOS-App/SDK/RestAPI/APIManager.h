@@ -27,58 +27,62 @@
                             SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
                              failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
-+ (void)selectFavoriteTeamForUser:(nonnull NSString *)phoneNumber
-                             Team:(nonnull NSString *)teamId
-                     SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                      failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
++ (void)selectFavoriteTeamForUserIdentifier:(nonnull NSString *)userId
+                             TeamIdentifier:(nonnull NSString *)teamId
+                               SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                                failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
 + (void)loginUserWithData:(nonnull NSMutableDictionary *)data
              SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
               failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
-+ (void)changePhoneNumberForPhoneNumber:(nonnull NSString *)phoneNumber
-                               WithData:(nonnull NSMutableDictionary *)data
-                           SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                            failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
++ (void)changePhoneNumberForWithData:(nonnull NSMutableDictionary *)data
+                        SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                         failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
 + (void)askForReVerificationForPhoneNumber:(nonnull NSString *)phoneNumber
                               SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
                                failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
++ (void)acceptEstimateWithData:(nonnull NSMutableDictionary *)data
+                  SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                   failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
+
 + (void)acceptChoiceOnFirstAttemptWithData:(nonnull NSMutableDictionary *)data
                               SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
                                failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
-+ (void)acceptChoiceOnRestAttemptWithData:(nonnull NSMutableDictionary *)data
++ (void)acceptChoiceOnRestAttemptWithChoiceIdentifier:(nonnull NSString *)choiceId
+                                                 Data:(nonnull NSMutableDictionary *)data
+                                         SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                                          failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
+
++ (void)removeChampionWithChampionIdentifier:(nonnull NSString *)championId
+                                SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                                 failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
+
++ (void)editChampionWithChampionIdentifier:(nonnull NSString *)championId
+                                  WithData:(nonnull NSMutableDictionary *)data
                               SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
                                failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
-
-+ (void)removeChampionWithIdentifier:(nonnull NSString *)championId
-                        SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                         failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
-
-+ (void)editChampionWithIdentifier:(nonnull NSString *)championId
-                          WithData:(nonnull NSMutableDictionary *)data
-                      SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                       failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
 + (void)newChampionWithData:(nonnull NSMutableDictionary *)data
                SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
                 failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
-+ (void)leaveChampionWithIdentifier:(nonnull NSString *)championId
-                     userIdentifier:(nonnull NSString *)userId
-                       SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                        failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
++ (void)leaveChampionWithChampionIdentifier:(nonnull NSString *)championId
+                             userIdentifier:(nonnull NSString *)userId
+                               SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                                failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
-+ (void)joinChampionWithIdentifier:(nonnull NSString *)championId
-                    userIdentifier:(nonnull NSString *)userId
-                      SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                       failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
++ (void)joinChampionWithChampionIdentifier:(nonnull NSString *)championId
+                            userIdentifier:(nonnull NSString *)userId
+                              SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                               failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
-+ (void)fetchChampionRankingWithFilter:(nonnull NSMutableDictionary *)filter
-                          SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                           failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
++ (void)fetchChampionRankingWithChampionIdentifier:(nonnull NSString *)championId
+                                      SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                                       failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
 + (void)fetchEstimatesOfUserWithUserIdentifier:(nonnull NSString *)userId
                                   SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
@@ -88,12 +92,14 @@
                                  SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
                                   failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
-+ (void)sendPaymentRequestWithSuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                               failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
++ (void)sendPaymentRequestWithData:(nonnull NSMutableDictionary *)data
+                      SuccessBlock:(nullable void (^)(NSData * _Nonnull data, NSURLResponse * _Nonnull response)) successBlock
+                       failedBlock:(nullable void (^)(NSError * _Nonnull error)) failedBlock;
 
-+ (void)fetchChoicesWithFilter:(nonnull NSMutableDictionary *)filter
-                  SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                   failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
++ (void)fetchChoicesWithUserIdentifier:(nonnull NSString *)userId
+                       ExactIdentifier:(nonnull NSString *)exactId
+                          SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                           failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
 + (void)fetchUserInfoWithUserIdentifier:(nonnull NSString *)userId
                            SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
@@ -114,13 +120,11 @@
 + (void)fetchAllNotificationsWithSuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
                                   failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
-+ (void)fetchAllPackagesWithFilter:(nonnull NSMutableDictionary *)filter
-                      SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                       failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
++ (void)fetchAllPackagesWithSuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                             failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
-+ (void)fetchAllUsersWithFilter:(nonnull NSMutableDictionary *)filter
-                   SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                    failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
++ (void)fetchAllUsersWithSuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                          failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
 + (void)fetchChampionsOfUserWithUserIdentifier:(nonnull NSString *)userId
                                   SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
@@ -135,8 +139,8 @@
                                  SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
                                   failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
-+ (void)fetchExactsWithFilter:(nonnull NSMutableDictionary *)filter
-                 SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
-                  failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
++ (void)fetchExactsWithLeagueIdentifier:(nonnull NSString *)leagueId
+                           SuccessBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, _Nonnull id responseObject)) successBlock
+                            failedBlock:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)) failedBlock;
 
 @end
